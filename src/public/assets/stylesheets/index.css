@@ -3,7 +3,7 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: Arial;
+  font-family: "Montserrat";
   min-height: 100vh;
 }
 
@@ -20,19 +20,116 @@ footer {
   /* footer styles */
 }
 
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 40%;
+}
+.image img {
+  border: solid 3px black;
+  border-radius: 1%;
+  width: 80%;
+}
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+
+.sui-tabs-tablist li {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+table {
+  width: 70vw;
+}
+table,
+td {
+  border: 1px solid #333;
+  text-align: center;
+}
+
+tr td:first-child {
+  color: black;
+}
+
+tbody {
+  font-size: 12px;
+}
+
+thead,
+tfoot {
+  background-color: #333;
+  color: #fff;
+}
 /* -------------------  TABLET  --------------------- */
 @media (min-width: 768px) {
-  /* use mobile */
+  .image img {
+    width: 500px;
+  }
+  table {
+    width: 500px;
+  }
+  tbody {
+    font-size: 17px;
+  }
 }
 
 /* -------------------  DESKTOP  -------------------- */
 
 @media (min-width: 1224px) {
-  /* use mobile */
+  .container {
+    flex-direction: row;
+  }
+  .image img {
+    width: 500px;
+  }
+  table {
+    width: 500px;
+  }
+
+  tbody {
+    font-size: 17px;
+  }
 }
 
 /* -------------------  LARGE SCREENS  -------------- */
 
 @media (min-width: 1824px) {
-  /* use mobile */
+  .image img {
+    width: 500px;
+  }
+  table {
+    width: 500px;
+  }
+  tbody {
+    font-size: 20px;
+  }
+}
+
+.loader {
+  margin: auto;
+  border: 20px solid #eaf0f6;
+  border-radius: 50%;
+  border-top: 20px solid #ff7a59;
+  width: 200px;
+  height: 200px;
+  animation: spinner 4s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

@@ -3,21 +3,36 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul, li {
-  margin: 0;
-  padding: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
   font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
+p {
+  text-align: justify;
+}
+
 img {
-  max-width: 100%;
+  /* max-width: 50%; */
   height: auto;
 }

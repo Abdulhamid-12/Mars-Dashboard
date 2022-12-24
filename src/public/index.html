@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mars Dashboard</title>
+    <link rel="stylesheet" href="assets/stylesheets/index.css" />
+    <link rel="stylesheet" href="assets/stylesheets/resets.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,700&amp;display=swap&amp;subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link
+      id="themecss"
+      rel="stylesheet"
+      type="text/css"
+      href="//www.shieldui.com/shared/components/latest/css/light/all.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="//www.shieldui.com/shared/components/latest/js/jquery-1.11.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"
+    ></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-
-<body>
+  <body>
     <main>
-        <div id="root">
-            <h1>Loading...</h1>
-        </div>
+      <div id="root">
+        <h1 style="text-align: center; color: #ff7a59">Loading</h1>
+        <div class="loader"></div>
+      </div>
     </main>
-</body>
-<script src="/client.js"></script>
-
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/4.1.0/immutable.min.js"></script>
+  <script src="/client.js"></script>
 </html>
